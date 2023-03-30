@@ -1,0 +1,73 @@
+/* h2{
+    color: rgb(119, 173, 18);
+} */
+
+/* .h2colorchanges{
+    color: blueviolet;
+} */
+
+.change-for-title{
+    text-decoration: overline;
+}
+
+.achanges > p > a > span{
+    color: aqua;
+}
+
+#salamkiri{
+    color: hsl(hue, saturation, lightness);
+}
+
+.div-change{
+    /* color: red */
+    background-image: url(img/tabiat);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    padding: 100px;
+    border: 5px double blue;
+    border-top: none;
+    margin: 200px 120px 50px 38px;
+}
+
+/* .div-color{
+    background-color: red;
+    opacity: 0;
+} */
+
+#text{
+    outline: red solid 10px;
+    /* background-color: hsla(10, 30%, 15%, 100%);
+    color: blue; */
+    /* width: fit-content; */
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(241, 9, 9);
+    text-decoration-style: dotted;
+    letter-spacing: 10px;
+    text-align: end;
+    /* white-space: normal; */
+}
+
+#some-changes p{
+    /* color: rgb(230, 58, 68); */
+    outline: red solid 5px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+    text-decoration-style: dotted;
+    letter-spacing: 5px;
+    /* white-space: nowrap; */
+   width: fit-content;
+   text-align: center;
+}
+
+ul{
+    list-style-type:armenian;
+}
