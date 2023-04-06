@@ -1,0 +1,27 @@
+.last-test{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    outline: black dotted 4px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration-line: overline;
+    text-decoration-color: blue;
+    text-decoration-style: double;
+    letter-spacing: 3px;
+    white-space: normal;
+    width:fit-content;
+}
+
+ul{
+    list-style-image: linear-gradient(to left bottom, red, blue);
+}
+
+table, th, td{
+    justify-content: left;
+    border: 5px solid red;
+    border-spacing: 10px;
+    border-collapse: collapse;
+    empty-cells:hide;
+    caption-side: bottom;
+}

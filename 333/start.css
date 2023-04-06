@@ -1,0 +1,42 @@
+h1{
+    text-transform:uppercase;
+    text-align: center;
+    background-image: url(tabiat);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    padding: 150px;
+}
+
+#pm{
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration-line:underline;
+    text-decoration-color: red;
+    text-decoration-style: double;
+    padding: 50px;
+    border: 2px double blue;
+    border-top: none;
+    margin: 10px 30px 10px 30px;
+    /* display: inline; */
+    outline: red 5px dotted;
+}
+
+ul{
+    font-size: larger;
+    font-weight: bolder;
+    list-style-type: none;
+    opacity: 10%;
+}
+
+table, th, td{
+    border: 5px solid blue;
+    /* border-spacing: 10px; */
+    /* border-collapse: collapse; */
+    empty-cells: show;
+    caption-side: bottom;
+    justify-content: center;
+
+}

@@ -71,3 +71,17 @@
 ul{
     list-style-type:armenian;
 }
+
+table, th ,td{
+    border: 5px solid red;
+    border-spacing: 10px;
+    /* border-collapse:collapse; */
+    caption-side: top;
+    empty-cells: show;
+    table-layout:none;
+}
+
+.div:hover{
+color: brown;
+font-size: x-large;
+}
