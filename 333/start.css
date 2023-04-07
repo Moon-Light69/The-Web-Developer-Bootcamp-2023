@@ -32,11 +32,23 @@ ul{
 }
 
 table, th, td{
-    border: 5px solid blue;
-    /* border-spacing: 10px; */
-    /* border-collapse: collapse; */
-    empty-cells: show;
-    caption-side: bottom;
-    justify-content: center;
+    border: 5px solid red;
+    border-collapse: collapse;
+    /* empty-cells: show; */
+    width: 70%;
+    table-layout:fixed;
+    text-align: center;
 
+
+}
+
+img{
+    width: 550px; height: 400px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.edit-image{
+    position: absolute;
+    left: 300px;
 }
