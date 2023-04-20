@@ -44,11 +44,11 @@ table, th, td{
 
 img{
     width: 550px; height: 400px;
-    /* display: flex;
-    justify-content: center; */
+    display:flex;
+    justify-content: center;
 }
 
 .edit-image{
-    position: absolute;
+    position:fixed;
     left: 300px;
 }
