@@ -1,0 +1,32 @@
+body {
+    font-family: monospace;
+    background-color: #0d1b2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button{
+    background:none;
+    font-size: 2em;
+    padding: 15px 20px;
+    border: 2px solid #ffc300;
+    border-radius: 25px;
+    color: #ffc300;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+}
+
+button:hover{
+    border-radius: 30px;
+    border-color: #e85d04;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.5em #e85d04;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+

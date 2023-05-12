@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>welcome</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <h1>log-in</h1>
+    <form action="log-in" method="get">
+        <div style="margin-bottom: 10px;">
+            <label for="username">please enter your user name</label>
+            <input type="text" name="user" id="username" placeholder="user name" required minlength="5" maxlength="10">
+        </div>
+
+        <div style="margin-bottom: 10px;">
+            <label for="password">please enter your password</label>
+            <input type="password" name="pass" id="password" placeholder="password" required minlength="8"
+                maxlength="15">
+        </div>
+
+        <div style="margin-bottom: 10px;">
+            <label for="email">please enter your email</label>
+            <input type="email" placeholder="your email" id="email" name="email" required minlength="10" maxlength="18">
+        </div>
+
+        <div style="margin-bottom: 10px;">
+            <label id="check">I agree evrythink</label>
+            <input type="checkbox" name="checked" required>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+            <label for="number">enter your age</label>
+            <input type="number" name="age" id="number" min="10" max="100" value="18" step="5">
+        </div>
+
+        <div style="margin-bottom: 10px;">
+            <label for="your-height">please enter your height</label>
+            <select name="height" id="your-height" required>
+                <option value="over-150">150+</option>
+                <option value="over-160">160+</option>
+                <option value="over-170" selected>170+</option>
+                <option value="over-180">180+</option>
+                <option value="over-190">190+</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="radio" id="radio" name="are" value="you" required>
+            <label for="radio">are you kind???</label>
+        </div>
+        <div>
+            <input type="radio" id="angry" name="are" value="you" required>
+            <label for="angry">are you angry???</label>
+        </div>
+        <button>submit</button>
+    </form>
+
+</body>
+
+</html>

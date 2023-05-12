@@ -1,0 +1,35 @@
+#transition{
+    width: 200px;
+    height: 200px;
+    background-color: #e76f51;
+    border-radius: 30%;
+    transition: background-color 3s, border-radius 0.5s;
+}
+
+#transition:hover{
+    background-color: #023047;
+    border-radius: 50%;
+ }
+
+ article div{
+    width: 100px;
+    height: 100px;
+    background-color: #83c5be;
+    border: 1px solid black;
+    margin: 5px 5px 5px 5px;
+    transition: margin-left 2s;
+ }
+
+ article:hover div{
+    margin-left: 500px;
+ }
+
+ article div:nth-child(1){
+    transition-timing-function: ease-in
+ }
+ div:nth-child(2){
+    transition-timing-function: ease-out
+ }
+ div:nth-child(3){
+    transition-timing-function: cubic-bezier(0.83, 0, 0.17, 1)
+ }

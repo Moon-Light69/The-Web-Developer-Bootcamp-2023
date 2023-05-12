@@ -15,7 +15,7 @@
 }
 
 #salamkiri {
-    color: hsl(hue, saturation, lightness);
+    color: rgba(23, 30%, 25%, 90%)
 }
 
 .div-change {
@@ -50,6 +50,7 @@
     letter-spacing: 10px;
     text-align: end;
     /* white-space: normal; */
+    background-repeat: no-repeat;
 }
 
 #some-changes p {
@@ -81,6 +82,7 @@ td {
     caption-side: top;
     empty-cells: show;
     table-layout:auto;
+    overflow-x: scroll;
 }
 
 .div:hover {
@@ -117,6 +119,7 @@ td {
     position: absolute;
     left: 260px;
     top: 260px;
+    color: hsl(29, 29%, 30%);
 }
 
 .in-khare~h4 {

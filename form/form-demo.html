@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>salam iran</title>
+</head>
+
+<body>
+    <h1>this is my first form</h1>
+
+    <form action="/log-in/" method="get">
+        <div>
+            <label for="user-name">user name: </label>
+            <input type="text" placeholder="user name" id="user-name">
+        </div>
+        <hr>
+        <div>
+            <label for="email">enter your email:</label>
+            <input type="email" placeholder="enter email" id="email" required 
+            minlength="5"  maxlength="20"> 
+        </div>
+        <hr>
+
+        <div>
+            <label for="password">enter your password:</label>
+            <input type="password" placeholder="password" id="password">
+        </div>
+        <hr>
+        <div>
+            <label for="checkbox">are you a human?:</label>
+            <input type="checkbox" placeholder="check" id="checkbox">
+        </div>
+
+        <button type="button">submit</button>
+
+    </form>
+
+    <button type="submit">submit</button>
+
+    <div>
+        <h1>how to search</h1>
+        <form action="https://www.reddit.com/search/">
+            <input type="search" name="q">
+            <button>search in reddit</button>
+        </form>
+    </div>
+2
+    <hr>
+
+    <form action="sing-up" method="get">
+        <div>
+            <div style="margin-bottom: 10px;">
+                <label for="user-name">enter your user name</label>
+                <input type="text" placeholder="user name" id="user-name" name="user">
+            </div>
+
+            <div>
+                <label for="password">enter your password</label>
+                <input type="password" placeholder="password" id="password" name="pass">
+            </div>
+
+            <div>
+                <input type="checkbox" id="check" name="checkbox" checked>
+                <label for="check">i agree evry think</label>
+            </div>
+
+            <div style="margin: 10px 0px 10px 0px;">
+                <div>
+                    <input type="radio" id="fish" name="food" value="fish">
+                    <label for="fish">fish</label>
+
+                    <input type="radio" id="meal" name="food" value="meal">
+                    <label for="meal">meal</label>
+
+                    <input type="radio" id="vegterian" name="food" value="veg" checked>
+                    <label for="vegterian">vegterian</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="select">please select a animel</label>
+                <select name="meal" id="select">
+                    <option value="fish">fish</option>
+                    <option value="veg" selected>vegterian</option>
+                    <option value="steak">steak</option>
+                </select>
+            </div>
+
+            <p>
+                <label for="your-age">how old are you</label>
+                <input type="number" id="your-age" name="age" min="0" max="1000" value="18" step="10">
+            </p>
+
+            <p>
+                <label for="dropshdow">dropshdow</label>
+                <input type="range" name="drop" id="dropshdow" value="5" step="20" min="1" max="100">
+            </p>
+
+            <p>
+                <label for="your-quaestion">enter your quaestion</label>
+                <textarea name="quaestion-_-" id="your-quaestion" cols="60" rows="30"></textarea>
+            </p>
+            <button>submit</button>
+
+            <p>
+                <label for="username">please enter your user name</label>
+                <input type="text" name="user" id="username" required minlength="5" maxlength="12">
+                <button>sing-up</button>
+            </p>
+
+        </div>
+        <div>
+            <label for="select">please select a animel</label>
+            <select name="meal" id="select">
+                <option value="fish">fish</option>
+                <option value="veg" selected>vegterian</option>
+                <option value="steak">steak</option>
+            </select>
+            <button>sing-up</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+/* *{
+    color:chocolate !important;
+} */
+
+/* h1, h2, h3{
+    text-align: center;
+} */
+
+/* a{
+    text-decoration: none;
+}
+
+h1:nth-child(2){
+    text-decoration: underline;
+    text-decoration-color: blue;
+} */
+
+/* h1~h2{
+    color: blue;
+} */
+
+/* .div h3{
+    color: blueviolet;
+} */
+
+.pra>h1 {
+    color: blueviolet;
+}
+
+input[type=text] {
+    color: brown;
+    font-size: larger;
+}
+
+input[type=password] {
+    color: blue;
+    font-size: larger;
+}
+
+/* a{
+    font-size: 100px;
+    text-decoration: none;
+} */
+
+a[href*=google] {
+    color: brown;
+}
+
+a[href*="fc"] {
+    color: green;
+}
+
+section p:nth-of-type(2n) {
+    color: red;
+    font-size: 25px;
+}
+
+input[type="radio"]:hover {
+    box-shadow: 0 0 0 3px hotpink;
+}
+
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px lime;
+    color: red;
+}
+
+h1,
+h2,
+h3::first-letter {
+    font-size: xx-large !important;
+    color: red !important;
+}
+
+p::first-line {
+    font-size: x-large;
+    color: red !important;
+}
+
+p::first-line {
+    color: blue;
+}
+
+::selection {
+    color: aqua;
+
+}
+
+section a::after {
+    content: '🔗';
+}
+
+form {
+    color: brown;
+}
+
+input[type="text"] {
+    color: brown;
+}
+
+input[type="text"]:checked {
+    color: green;
+}
+
+button,
+input {
+    color: #0a9396 !important;
+    background-color: #7209b7;
+
+}
+
+div>p {
+    display: flex;
+    justify-content: center;
+}
+
+div p:nth-of-type(2n) {
+    background-color: #d6ccc2 !important;
+    padding: 10px 10px 10px 10px;
+    border-color: black;
+    border: 5px;
+    border-style: dotted;
+    margin: 20px 20px 20px 20px;
+    outline: red solid 5px;
+    
+}
+
+section{
+    display: none;
+}
+
+article{
+    font-size: 30px;
+    width: 80%;
+    height:70%;
+}
+
+article p{
+    font-size: 1em;
+}
+
+ul{
+    font-size: 0.9rem;
+    
+}
+
+section{
+    width: 800px;
+    height: 800px;
+    background-color: #e76f51;
+    /* position:; */
+}
+
+#trans{
+    width: 50%;
+    height: 50%;
+    background-color: rgba(244, 178, 37, 0.5);
+}
+

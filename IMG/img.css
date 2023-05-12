@@ -1,0 +1,16 @@
+
+img{
+    width: 30%;
+    margin: calc(10%/6);
+}
+
+nav{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: calc(10%/6);
+    border-bottom: 2px solid #000000;
+    width: 30%;
+    padding: 1.2em 0;
+}
+
