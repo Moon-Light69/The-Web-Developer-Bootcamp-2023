@@ -1,0 +1,33 @@
+body{
+    font-family: sans-serif;
+    background-color: #212529;
+}
+
+div h1{
+    text-align: center;
+    color: #48cae4;
+    border-bottom: 2px solid #90e0ef;
+}
+
+#container{
+    background-color: #168aad;
+    margin: auto;
+    border-radius: 20px;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+section div:nth-child(3){
+    align-self: flex-start;
+}
+
+section div{
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}

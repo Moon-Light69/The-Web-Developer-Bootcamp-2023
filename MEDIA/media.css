@@ -1,0 +1,46 @@
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #212529;
+}
+
+a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul{margin: auto;
+
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+ul, li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul div:hover{
+    color: #00b4d8;
+}
+
+@media (max-width: 1000px) and (min-width: 600px){
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    a{
+        color: red;
+    }
+}

@@ -157,3 +157,6 @@ section{
     background-color: rgba(244, 178, 37, 0.5);
 }
 
+a{
+    text-decoration: none;
+}

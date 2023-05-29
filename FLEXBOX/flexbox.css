@@ -1,0 +1,26 @@
+body{
+background-color: #212529;
+}
+
+#sec{
+    width: 100%;
+    height: 95vh;
+    background-color: #00b4d8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#sec div{
+    width: 150px;
+    height: 150px;
+}
+
+
+#sec div:nth-of-type(2){
+    align-self: flex-end !important;
+    flex-basis: 400px;
+}
