@@ -19,6 +19,7 @@ button{
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
     transition-delay: 0.1s;
+    position: fixed ;
 }
 
 button:hover{

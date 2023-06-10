@@ -120,15 +120,15 @@ TODO:
     ops[i].onclick = moveNum;
   }
 
-  Add click event to equal sign
-  equals.onclick = displayNum;
+  // Add click event to equal sign
+  // equals.onclick = displayNum;
 
-  Add click event to clear button
-  el("#clear").onclick = clearAll;
+  // Add click event to clear button
+  // el("#clear").onclick = clearAll;
 
-  Add click event to reset button
-  el("#reset").onclick = function() {
-    window.location = window.location;
-  };
+  // Add click event to reset button
+  // el("#reset").onclick = function() {
+  //   window.location = window.location;
+  // };
 
 }());

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Downloads/my code/PricingPanel_CODE/PricingPanel/PriceTableStarter"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "index_html"
+	}
+}

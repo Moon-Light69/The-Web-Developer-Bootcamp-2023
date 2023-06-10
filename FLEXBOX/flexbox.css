@@ -12,15 +12,20 @@ background-color: #212529;
     align-items: center;
     flex-wrap: wrap;
     align-content: center;
+    flex-shrink: 5 !important;
+    /* flex-grow: 450px; */
 }
 
 #sec div{
     width: 150px;
     height: 150px;
+    /* flex-grow: 450px;
+    flex-shrink: 24; */
 }
 
 
 #sec div:nth-of-type(2){
-    align-self: flex-end !important;
-    flex-basis: 400px;
-}
+    align-self: flex-start !important;
+    flex-basis: 450px;
+    flex-shrink: 1 !important;
+ }
