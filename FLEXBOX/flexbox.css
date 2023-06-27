@@ -19,8 +19,9 @@ background-color: #212529;
 #sec div{
     width: 150px;
     height: 150px;
-    /* flex-grow: 450px;
-    flex-shrink: 24; */
+    /* flex-grow: 24;
+    flex-shrink: 24;
+    flex-basis: 250px; */
 }
 
 

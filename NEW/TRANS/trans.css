@@ -74,4 +74,7 @@ aside div {
 aside div:hover{
     transform-origin: right bottom;
     transform: rotate(35deg) scale(2) translateX(30px) translateY(60px);
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px 10px #e76f51;
+    cursor: pointer;
 }

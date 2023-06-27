@@ -1,0 +1,15 @@
+body {
+    background-color: #212529;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Tilt Prism', cursive;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (max-width: 1000px){
+
+}
