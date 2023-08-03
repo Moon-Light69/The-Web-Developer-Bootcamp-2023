@@ -1,0 +1,42 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #212529;
+    color: white;
+}
+
+.color{
+    color: white;
+}
+
+#banner {
+    width: 100%;
+}
+img.square {
+    width: 400px;
+    object-fit: cover;
+    height:400px;
+}
+
+#toc {
+    background-color:#212529;
+    border: 1px solid #a2a9b1;
+    display: table;
+    padding: 1em;
+}
+
+#toc a {
+    text-decoration: none;
+}
+
+.tocnumber {
+    color: #a2a9b1;
+}
+
+.purple {
+    color:purple;
+}
+
+.border {
+    border: 6px solid red;
+}

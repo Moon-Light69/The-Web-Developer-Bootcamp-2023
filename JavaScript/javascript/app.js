@@ -68,7 +68,7 @@
 //     break;
 
 //   default:
-//     console.log("it is nit a lang");
+//     console.log("it is not a lang");
 // }
 
 // for (let number = 10; number >= 10; number--){
@@ -98,7 +98,7 @@
 // ]
 
 // for (let i = 0; i < userList.length; i++){
-//     console.log(i, userList[i])
+//     console.log(i + 1, userList[i])
 // }
 
 // for (let i = userList.length - 1; i >= 0; i--) {
@@ -126,7 +126,7 @@
 //     }
 //  }
 
-// const secret = "I love parastu"
+// const secret = "I love nazanin"
 
 // let askUser = prompt("enter our secret please")
 
@@ -136,14 +136,14 @@
 // console.log("well down you didn't forget the secret")
 
 // for (let i = 0; i <= 100; ++i){
-//     console.log(i, "I love you parastu")
+//     console.log(i, "I love you nazanin")
 // }
 
 // const input = prompt("say somethink")
 
 // while (true) {
 //     input = prompt(input);
-//     if (input === "i love parastu") {
+//     if (input === "i love nazanin") {
 //         break;
 //     }
 // }
@@ -165,7 +165,7 @@
 
 // for (let i = 0; i <= 1000; ++i){
 //     console.log(i);
-//     if (i === 100) break;0
+//     if (i === 100) break;
 // }
 
 // let maximum = parseInt(prompt("Enter the maximum number!"));

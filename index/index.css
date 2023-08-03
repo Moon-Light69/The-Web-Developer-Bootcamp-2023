@@ -8,6 +8,8 @@
 
 .change-for-title {
     text-decoration: overline;
+    text-decoration-color: black;
+    text-decoration-style: dotted;
 }
 
 .achanges>p>a>span {

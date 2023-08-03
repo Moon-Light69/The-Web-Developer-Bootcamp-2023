@@ -1,6 +1,6 @@
 // let input = prompt("what would you like to do?");
 
-// const todos = ["go to gym", "talk to parastu"];
+// const todos = ["go to gym", "talk to nazanin"];
 
 // while (input !== "quit" && input !== "q") {
 //   if (input === "list") {
@@ -350,15 +350,14 @@
 //   }
 // }
 
-// const numbers = [
-//   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-// ];
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 
 // numbers.forEach(function (num) {
 //   console.log(num);
 // });
 
 // console.log("=====================");
+
 // numbers.forEach(function (num) {
 //   if (num % 2 === 0) {
 //     console.log(num);
@@ -392,12 +391,12 @@
 //   },
 // ];
 
-// movies.forEach(function (movie, num) {
+// const forEach =  movies.forEach(function (movie, num) {
 //   console.log(`${num + 1}: ${movie.title} - ${movie.score} /100`);
 // });
 
 // for (let watch of movies) {
-//   console.log(`${watch["title"]} --> ${watch.score}`);
+//   console.log(`${watch.title} --> ${watch.score}`);
 // }
 
 // const numbers = [
@@ -582,20 +581,18 @@
 
 // const goodTitles = goodMovies.map((m) => m.title);
 
-// //=======================================================//
+//=======================================================//
 // const every = movies.every(function (movie){
 //      return movie.year >= 2015})
 // const some = movies.some((film) => (film.year >= 2015))
-// //=======================================================//
-// const numbers = [
-//   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-// ];
+//=======================================================//
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 101];
 
 // numbers.every(function (num){return num <= 75})
 // numbers.some((num) => (num > 100))
 
 // =======================================================//
-// const prices = [9.99, 1.50, 19.99, 49.99, 30.50];
+//const prices = [9.99, 1.50, 19.99, 49.99, 30.50];
 
 // let total = 0;
 // for (let price of prices) {
@@ -672,11 +669,20 @@
 // ]
 
 // const highestRated = movies.reduce((bestMovie, currMovie) => {
-//     if (currMovie.score < bestMovie.score) {
+//     if (currMovie.score > bestMovie.score) {
 //         return currMovie
 //     }
 //     return bestMovie
 // })
+// console.log(highestRated)
+
+// const temp = [1, 2, 3, 4]
+
+// const initialValue = 0;
+
+// const test = temp.reduce((acc = 0 , value) =>  acc + value)
+
+// const test = temp.reduce((acc , value) => acc + value, initialValue)
 
 // const evens = [2, 4, 6, 8];
 // evens.reduce((sum, num) => sum + num, 100 )
@@ -692,7 +698,7 @@
 // function rollDie(numSide) {
 //   if (numSide === undefined || NaN) {
 //     numSide = 6;
-//   }
+//   } 
 //   return Math.floor(Math.random() * numSide) + 1;
 // }
 
@@ -709,7 +715,135 @@
 // Math.max(...numbers);
 // Math.min(...numbers);
 
+// const temp = {
+//   name: 'danial',
+//   age: '29',
+//   city: 'berlin',
+// }
+// const update = {...temp, name: 'ehsan'}
+
+// const temp = { name:'danial', age:29, city: 'Berlin', name:'Ehsan'}
+
 // const cats = ["Blue", "Scout", "Rocket"];
 // const dogs = ["Rusty", "Wyatt"];
 
 // const allpets = [...cats, ...dogs];
+
+// while (true) {
+//   const userInput = prompt("Please enter an animal name (or 'q' to quit)");
+
+//   if (userInput === "q") {
+//     console.log("Ok, you don't have any animal.");
+//     break;
+//   } else if (!isNaN(userInput)) {
+//     console.log("False, please enter a real name.");
+//   } else {
+//     allpets.push(userInput);
+//     console.log(`${userInput} is added to the list. ${allpets}`);
+//   }
+// }
+
+// const userData = {
+//     userName: "Danial",
+//     userPassword: "123456789",
+//     userEmail: "danial.ghobadi@yahoo.com"
+// }
+
+// const myData = {...userData, id: 3741, admin: false}
+
+// function raceResults(gold, silver, ...everyoneelse) {
+//     console.log(`GOLD MEDAL GOES TO: ${gold}`)
+//     console.log(`SILVER MEDAL GOES TO: ${silver}`)
+//     console.log(`AND THANKS TO EVERYONE ELSE: ${everyoneelse}`)
+// }
+
+// raceResults('Daniel', 'Ehsan', 'Jack', 'Tim', 'Alex')
+
+
+// const scores = [929321, 899341, 888336, 772739, 543671, 243567, 111934]
+
+// const hightScore = scores[0]
+// const secondHightScore = scores[1]
+
+// const [GOLD, SILVER, BRONZE, ...EVERYONEELSE] = scores
+
+// const user = {
+//     email: "harvey@gmail.com",
+//     password: "sCoTt1948sMiTh",
+//     firstName: "harvey",
+//     lastName: "Milk",
+//     born: 1930,
+//     deid: 1978,
+//     bio: "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır.",
+//     city: "san francisco",
+//     state: "california"
+// }
+
+// const firstName = user.firstName
+// const lastName = user.lastName
+
+// const data= {...user}
+// const {firstName: name, lastName: last, born, deid} = user
+
+// function fullName(user) {
+//     return `${user.firstName} ${user.lastName}`
+// }
+
+// function fullName({firstName: name, lastName}) {
+//     return `${name} ${lastName}`
+// }
+
+// const movies = [
+//   {
+//     title: 'amadeus',
+//     score: 99,
+//     year: 1984
+//   },
+//   {
+//     title: 'sharknado',
+//     score: 35,
+//     year: 2013
+//   },
+//   {
+//     title: '13 going on 30',
+//     score: 70,
+//     year: 2004
+//   },
+//   {
+//     title: 'stand by me',
+//     score: 85,
+//     year: 1986
+//   },
+//   {
+//     title: 'waterworld',
+//     score: 62,
+//     year: 1995
+//   },
+//   {
+//     title: 'jingle all way',
+//     score: 71,
+//     year: 1996
+//   },
+//   {
+//     title: 'parasite',
+//     score: 95,
+//     year: 2019
+//   },
+//   {
+//     title: 'notting hill',
+//     score: 77,
+//     year: 1999
+//   },
+//   {
+//     title: 'alien',
+//     score: 90,
+//     year: 1979
+//   },
+// ]
+
+// const movie = movies.filter((movie) => movie.score >= 95)
+// const movie = movies.filter(function ({score}) {return score >= 95})
+
+// const movieData = movies.map(function({title, year}) {
+//     return `${title} and ${year}`
+// })
