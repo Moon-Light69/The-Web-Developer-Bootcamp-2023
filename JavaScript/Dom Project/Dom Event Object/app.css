@@ -1,0 +1,43 @@
+body{
+    background-color: #111111;
+}
+
+div{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+button{
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+button:hover{
+
+    border-radius: 45px;
+}
+
+/* @media (max-width: 600px) {
+   div button {
+        display: none;
+        transition-property: all;
+        transition-duration: 2s;
+        transition-timing-function: ease-out;
+        transition-delay: 10ms;
+        transform-origin: top;
+        transform: translateY(10deg);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items:center;
+        flex-wrap: wrap;
+        align-content: stretch;
+        align-self: baseline;
+        flex-grow: 45;
+        flex-shrink: 45;
+        flex-basis: 200px;
+    }
+} */

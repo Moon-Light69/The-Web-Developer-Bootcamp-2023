@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dom event Bubbling</title>
+
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section onclick="alert('section clicked')">
+             <p onclick="alert('paragraph clicked')">
+               i'm a paragraph:
+               <button onclick="alert('Button clicked')">Click</button>
+            </p>
+    </section>
+    
+
+     <div id="container">
+        <p style="display: inline;">click to hide</p>
+        <button id="changeColor">Change Color</button>
+     </div>
+
+     <script src="app.js"></script>
+</body>
+
+</html>

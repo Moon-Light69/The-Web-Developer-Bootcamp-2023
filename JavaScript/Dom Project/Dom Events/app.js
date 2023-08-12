@@ -22,6 +22,7 @@ const newH1 = document.querySelector('h1').onmouseenter = function() {
 }
 
 const v3 = document.getElementById('v3.0')
+
 v3.addEventListener('click', function () {
     alert(`This is version 3`)
 })
@@ -51,5 +52,5 @@ hi.addEventListener('click', () => {
 const bye = document.getElementById('goodbye')
 
 bye.addEventListener('click', ()=> {
-    console.log('goodBye')
+    console.log('goodBye'), {once: true}
 })
