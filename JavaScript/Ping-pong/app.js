@@ -8,7 +8,7 @@ const winningScoreSelect = document.querySelector("#playto");
 
 let p1Score = 0;
 let p2Score = 0;
-let winningScore = 3;
+let winningScore = winningScoreSelect;
 // let isbaziTamamNashode = false;
 
 let baziTamamNashode = true;
