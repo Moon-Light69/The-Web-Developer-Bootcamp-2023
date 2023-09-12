@@ -31,3 +31,9 @@ section div{
     width: 150px;
     height: 150px;
 }
+
+@media (min-width: 550px) {
+    body {
+        background-color: red;
+    }
+}

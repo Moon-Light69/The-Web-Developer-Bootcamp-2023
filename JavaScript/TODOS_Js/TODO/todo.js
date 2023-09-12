@@ -1,6 +1,6 @@
 // let input = prompt("what would you like to do?");
 
-// const todos = ["go to gym", "talk to nazanin"];
+// let todos = ["go to gym", "talk to nazanin"];
 
 // while (input !== "quit" && input !== "q") {
 //   if (input === "list") {

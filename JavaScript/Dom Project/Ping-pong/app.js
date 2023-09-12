@@ -75,11 +75,11 @@ p2Button.addEventListener("click", function () {
 // });
 
 winningScoreSelect.addEventListener("input", function () {
-  winningScore = parseInt(this.value);
+  winningScoreSelect = parseInt(this.value);
   reset();
 });
 
-resetButton.addEventListener("click", reset);
+resetButton.addEventListener("click", reset());
 
 function reset() {
   baziTamamNashode = true;

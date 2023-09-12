@@ -25,7 +25,7 @@
 // //// window.getComputedStyle()
 // //// .style.fontSize
 // ////.parentElement
-// ////.children[1]
+// ////.children[1] 
 // ////.nextElementSibling
 // ////.nextSibling
 // ////.createElement
@@ -80,6 +80,7 @@
 // newImg.src = 'https://img.freepik.com/free-photo/grayscale-selective-focus-hot-sad-dog-looking-out-window_181624-17664.jpg'
 // document.body.appendChild(newImg)
 // newImg.classList.add('square')
+
 
 
 

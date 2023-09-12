@@ -12,8 +12,12 @@
     text-decoration-style: dotted;
 }
 
-.achanges>p>a>span {
+.achanges p a span {
     color: aqua;
+}
+
+.achanges a {
+    color: red;
 }
 
 #salamkiri {
@@ -85,6 +89,7 @@ td {
     empty-cells: show;
     table-layout:auto;
     overflow-x: scroll;
+    border-collapse: collapse;
 }
 
 .div:hover {

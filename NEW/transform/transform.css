@@ -17,4 +17,5 @@ div:hover h1{
     background-color: #14213d;
     transform-origin:top left;
     transform: skew(30deg, 60deg);
+    box-sizing: border-box;
 }
