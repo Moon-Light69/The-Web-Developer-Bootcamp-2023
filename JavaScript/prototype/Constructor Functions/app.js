@@ -178,31 +178,87 @@
 ////                           how to make a class in JS
 ////==========================================================================================
 
-class Color {
-  constructor(r, g, b, name) {
-    this.red = r;
-    this.green = g;
-    this.blue = b 
-    this. colorName = name 
-  }
-  hello() {
-    console.log(`Hello from ${this.colorName}`);
-  }
-  innerRGB() {
-    const {red : redd, green, blue} = this
-    return `${redd}, ${green}, ${blue}`
-  }
-  RGB() {
-    return `RGB(${this.red}, ${this.green}, ${this.blue})`
-  }
-  rgba(a = 1.0) {
-    return `rgba(${this.innerRGB()}, ${a})`
-  }
-  hex() {
-    const {red : redd, green, blue} = this
-    return "#" + ((1 << 24) + (redd << 16) + (green << 8) + blue).toString(16).slice(1);
-  }
-}
+// class Color {
+//   constructor(r, g, b, name) {
+//     this.red = r;
+//     this.green = g;
+//     this.blue = b 
+//     this. colorName = name 
+//   }
+//   hello() {
+//     console.log(`Hello from ${this.colorName}`);
+//   }
+//   innerRGB() {
+//     const {red : redd, green, blue} = this
+//     return `${redd}, ${green}, ${blue}`
+//   }
+//   RGB() {
+//     return `RGB(${this.red}, ${this.green}, ${this.blue})`
+//   }
+//   rgba(a = 1.0) {
+//     return `rgba(${this.innerRGB()}, ${a})`
+//   }
+//   hex() {
+//     const {red : redd, green, blue} = this
+//     return "#" + ((1 << 24) + (redd << 16) + (green << 8) + blue).toString(16).slice(1);
+//   }
+// }
 
-const c1 = new Color(231, 123, 41, 'orange');
-console.log(c1);
+// const c1 = new Color(231, 123, 41, 'orange');
+// console.log(c1);
+
+// class pets {
+//   constructor(name, age) {
+//     this.name = name
+//     this.age = age 
+//   }
+//   eat() {
+//     return ${this.name} is eating!
+//   }
+// }
+
+// class cat extends pets{
+//   constructor(name, age, livesLeft = 9) {
+//     super(name, age)
+//     this.left = livesLeft
+//   }
+//   meow() {
+//     return "MEOWWWW!!!"
+//   }
+// }
+
+// class dog extends pets {
+//   bark() {
+//     return "WOOOOOF!!!"
+//   }
+//   eat() {
+//     return ${this.name} give back his food!!!
+//   }
+// }class pets {
+//   constructor(name, age) {
+//     this.name = name
+//     this.age = age 
+//   }
+//   eat() {
+//     return ${this.name} is eating!
+//   }
+// }
+
+// class cat extends pets{
+//   constructor(name, age, livesLeft = 9) {
+//     super(name, age)
+//     this.left = livesLeft
+//   }
+//   meow() {
+//     return "MEOWWWW!!!"
+//   }
+// }
+
+// class dog extends pets {
+//   bark() {
+//     return "WOOOOOF!!!"
+//   }
+//   eat() {
+//     return ${this.name} give back his food!!!
+//   }
+// }
