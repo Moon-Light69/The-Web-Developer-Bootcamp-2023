@@ -75,7 +75,7 @@
 // const danial = new user("danial", 20, "iran");
 // const sarina = new user("sarina", 10, "Turkiye");
 
-////================================================================
+// //================================================================
 
 // const { formToJSON } = require("axios");
 
@@ -174,16 +174,16 @@
 
 // console.log(Ehsan.height);
 
-////==========================================================================================
-////                           how to make a class in JS
-////==========================================================================================
+// //==========================================================================================
+// //                           how to make a class in JS
+// //==========================================================================================
 
 // class Color {
 //   constructor(r, g, b, name) {
 //     this.red = r;
 //     this.green = g;
 //     this.blue = b 
-//     this. colorName = name 
+//     this.colorName = name 
 //   }
 //   hello() {
 //     console.log(`Hello from ${this.colorName}`);
@@ -213,7 +213,7 @@
 //     this.age = age 
 //   }
 //   eat() {
-//     return ${this.name} is eating!
+//     return ${this.name}
 //   }
 // }
 
@@ -232,33 +232,36 @@
 //     return "WOOOOOF!!!"
 //   }
 //   eat() {
-//     return ${this.name} give back his food!!!
-//   }
-// }class pets {
-//   constructor(name, age) {
-//     this.name = name
-//     this.age = age 
-//   }
-//   eat() {
-//     return ${this.name} is eating!
+//     return ${this.name}
 //   }
 // }
 
-// class cat extends pets{
-//   constructor(name, age, livesLeft = 9) {
-//     super(name, age)
-//     this.left = livesLeft
-//   }
-//   meow() {
-//     return "MEOWWWW!!!"
-//   }
-// }
 
-// class dog extends pets {
-//   bark() {
-//     return "WOOOOOF!!!"
-//   }
-//   eat() {
-//     return ${this.name} give back his food!!!
-//   }
-// }
+class pets {
+  constructor(name, age) {
+    this.name = name
+    this.age = age 
+  }
+  eat() {
+    return `${this.name} is eating!`
+  }
+}
+
+class cat extends pets{
+  constructor(name, age, livesLeft = 9) {
+    super(name, age)
+    this.left = livesLeft
+  }
+  meow() {
+    return "MEOWWWW!!!"
+  }
+}
+
+class dog extends pets {
+  bark() {
+    return "WOOOOOF!!!"
+  }
+  eat() {
+    return `${this.name} give back his food!!!`
+  }
+}

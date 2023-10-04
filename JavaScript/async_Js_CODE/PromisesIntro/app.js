@@ -1,37 +1,37 @@
-// // THE CALLBACK VERSION
-// const fakeRequestCallback = (url, success, failure) => {
-//     const delay = Math.floor(Math.random() * 4500) + 500;
-//     setTimeout(() => {
-//         if (delay > 4000) {
-//             failure(console.log('Connection Timeout :('))
-//         } else {
-//             success(console.log(`Here is your fake data from ${url}`))
-//         }
-//     }, delay)
-// }
+// THE CALLBACK VERSION
+const fakeRequestCallback = (url, success, failure) => {
+    const delay = Math.floor(Math.random() * 4500) + 500;
+    setTimeout(() => {
+        if (delay > 4000) {
+            failure(console.log('Connection Timeout :('))
+        } else {
+            success(console.log(`Here is your fake data from ${url}`))
+        }
+    }, delay)
+}
 
-// fakeRequestCallback('books.com/page1',
-//     function (find) {
-//         console.log("IT WORKED!!!!")
-//         console.log(find)
-//         fakeRequestCallback('books.com/page2',
-//             function (find) {
-//                 console.log("IT WORKED AGAIN!!!!")
-//                 console.log(find)
-//                 fakeRequestCallback('books.com/page3',
-//                     function (find) {
-//                         console.log("IT WORKED AGAIN (3rd req)!!!!")
-//                         console.log(find)
-//                     },function (err) {
-//                         console.log("ERROR (3rd req)!!!", err)
-//                     })
-//             },
-//             function (err) {
-//                 console.log("ERROR (2nd req)!!!", err)
-//             })
-//     }, function (err) {
-//         console.log("ERROR!!!", err)
-//     })
+fakeRequestCallback('books.com/page1',
+    function (find) {
+        console.log("IT WORKED!!!!")
+        console.log(find)
+        fakeRequestCallback('books.com/page2',
+            function (find) {
+                console.log("IT WORKED AGAIN!!!!")
+                console.log(find)
+                fakeRequestCallback('books.com/page3',
+                    function (find) {
+                        console.log("IT WORKED AGAIN (3rd req)!!!!")
+                        console.log(find)
+                    },function (err) {
+                        console.log("ERROR (3rd req)!!!", err)
+                    })
+            },
+            function (err) {
+                console.log("ERROR (2nd req)!!!", err)
+            })
+    }, function (err) {
+        console.log("ERROR!!!", err)
+    })
 
 
 //THE PROMISE VERSION 
@@ -48,24 +48,24 @@ const fakeRequestPromise = (url) => {
     })
 }
 
-// fakeRequestPromise('danial.com/page1')
-// .then( (accept) => {
-//     console.log("PROMISE RESELVED page 1 !")
-//     console.log(accept)
-//     return fakeRequestPromise('danial.com/page2')
-// })
-// .then( (accept) => {
-//     console.log("PROMISE RESELVED page 2 !")
-//     console.log(accept)
-//     return fakeRequestPromise('danial.com/page3')
-// })
-// .then( (accept) => {
-//     console.log("PROMISE RESELVED page 3 !")
-//     console.log(accept)
-// })
-// .catch((err) => {
-//     console.log("ERROR!!!", err)
-// })
+fakeRequestPromise('danial.com/page1')
+.then( (accept) => {
+    console.log("PROMISE RESELVED page 1 !")
+    console.log(accept)
+    return fakeRequestPromise('danial.com/page2')
+})
+.then( (accept) => {
+    console.log("PROMISE RESELVED page 2 !")
+    console.log(accept)
+    return fakeRequestPromise('danial.com/page3')
+})
+.then( (accept) => {
+    console.log("PROMISE RESELVED page 3 !")
+    console.log(accept)
+})
+.catch((err) => {
+    console.log("ERROR!!!", err)
+})
 
 
 // const request = fakeRequestPromise('danial.com/page1');
@@ -111,8 +111,9 @@ const fakeRequestPromise = (url) => {
 
 
 fakeRequestPromise('yelp.com/api/coffee/page1')
-    .then(() => {
+    .then((acc) => {
         console.log("IT WORKED!!!!!! (page1)")
+        console.log(acc)
         fakeRequestPromise('yelp.com/api/coffee/page2')
             .then(() => {
                 console.log("IT WORKED!!!!!! (page2)")
