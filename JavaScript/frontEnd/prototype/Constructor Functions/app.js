@@ -5,7 +5,7 @@
 // const { formToJSON } = require("axios");
 
 // function makeColor(r, g, b) {
-//   const color = {};
+//   const color = [];
 //   color.r = r;
 //   color.g = g;
 //   color.b = b;
@@ -182,8 +182,8 @@
 //   constructor(r, g, b, name) {
 //     this.red = r;
 //     this.green = g;
-//     this.blue = b 
-//     this.colorName = name 
+//     this.blue = b
+//     this.colorName = name
 //   }
 //   hello() {
 //     console.log(`Hello from ${this.colorName}`);
@@ -210,7 +210,7 @@
 // class pets {
 //   constructor(name, age) {
 //     this.name = name
-//     this.age = age 
+//     this.age = age
 //   }
 //   eat() {
 //     return ${this.name}
@@ -232,36 +232,58 @@
 //     return "WOOOOOF!!!"
 //   }
 //   eat() {
-//     return ${this.name}
+//     return this.name
 //   }
 // }
 
+// class pets {
+//   constructor(name, age) {
+//     this.name = name
+//     this.age = age
+//   }
+//   eat() {
+//     return `${this.name} is eating!`
+//   }
+// }
 
-class pets {
-  constructor(name, age) {
-    this.name = name
-    this.age = age 
+// class cat extends pets{
+//   constructor(name, age, livesLeft = 9) {
+//     super(name, age)
+//     this.left = livesLeft
+//   }
+//   meow() {
+//     return "MEOWWWW!!!"
+//   }
+// }
+
+// class dog extends pets {
+//   bark() {
+//     return "WOOOOOF!!!"
+//   }
+//   eat() {
+//     return `${this.name} give back his food!!!`
+//   }
+// }
+
+class school {
+  constructor(name, family) {
+    this.nam = name;
+    this.fa = family;
   }
-  eat() {
-    return `${this.name} is eating!`
+  who() {
+    console.log(`Hi my name is: ${this.nam} and my family:${this.fa}`);
   }
 }
 
-class cat extends pets{
-  constructor(name, age, livesLeft = 9) {
-    super(name, age)
-    this.left = livesLeft
+class englishClass extends school {
+  constructor(name, family, age) {
+    super(name, family);
+    this.age = age;
   }
-  meow() {
-    return "MEOWWWW!!!"
-  }
-}
-
-class dog extends pets {
-  bark() {
-    return "WOOOOOF!!!"
-  }
-  eat() {
-    return `${this.name} give back his food!!!`
+  student() {
+    const { nam, fa, age } = this;
+    console.log(
+      `Hi my name is: ${nam} and my family:${fa} and I born in ${age}`
+    );
   }
 }

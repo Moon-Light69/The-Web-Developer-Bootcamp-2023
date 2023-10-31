@@ -1,5 +1,5 @@
-const input = document.querySelector('input')
-const h1 = document.querySelector('h1')
+const input = document.querySelector("input");
+const h1 = document.querySelector("h1");
 
 // input.addEventListener('change', function(e) {
 //     console.log('what can I say???')
@@ -15,6 +15,6 @@ const h1 = document.querySelector('h1')
 //     h1.innerText = input.value
 // })
 
-input.addEventListener('input', function() {
-    h1.innerText = input.value
-})
+input.addEventListener("input", function () {
+  h1.innerText = input.value;
+});

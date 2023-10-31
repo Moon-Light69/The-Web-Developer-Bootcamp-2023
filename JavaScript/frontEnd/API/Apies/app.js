@@ -90,52 +90,49 @@ getStarWarsPerson(3);
 
 const getStarwars = async (id) => {
   try {
-    const result = await fetch(`https://swapi.dev/api/people/${id}/ `)
-    const data = await result.json()
-    console.log(data)
+    const result = await fetch(`https://swapi.dev/api/people/${id}/ `);
+    const data = await result.json();
+    console.log(data);
   } catch (error) {
-    console.error(`We're sorry but your request is rejected becuse:`, error)
+    console.error(`We're sorry but your request is rejected becuse:`, error);
   }
-}
+};
 
 const apiResult = async function () {
-  try{
+  try {
     const characterFeatures = await fetch("https://swapi.dev/api/people/1/");
-  	console.log("RESOLED", characterFeatures);
-  	const formattedData = await characterFeatures.json();
-  	console.log(formattedData);
-  	const characterNames = await fetch("https://swapi.dev/api/people/2/ ");
-  	console.log("SECEND REQUEST RESOLVED!!!", characterNames);
-  	const formattedNames = await characterNames.json();
-     console.log("JSON DONE", formattedNames);
-  }catch(e){
+    console.log("RESOLED", characterFeatures);
+    const formattedData = await characterFeatures.json();
+    console.log(formattedData);
+    const characterNames = await fetch("https://swapi.dev/api/people/2/ ");
+    console.log("SECEND REQUEST RESOLVED!!!", characterNames);
+    const formattedNames = await characterNames.json();
+    console.log("JSON DONE", formattedNames);
+  } catch (e) {
     console.log("ERROR!!!", e);
   }
-}
+};
 
+const jokes = document.getElementById("jokes");
 
-const jokes = document.getElementById("jokes")
-
-const button = document.querySelector('button')
+const button = document.querySelector("button");
 
 const addNewJoke = async () => {
-  const jokeText = await getDadJoke()
-  console.log(jokeText)
-  const newLi = document.createElement('li')
-  newLi.append(jokeText)
-  jokes.append(newLi)
-}
+  const jokeText = await getDadJoke();
+  console.log(jokeText);
+  const newLi = document.createElement("li");
+  newLi.append(jokeText);
+  jokes.append(newLi);
+};
 
 const getDadJoke = async () => {
   try {
-    const config  = { headers: { Accept: "application/json"} }
-    const res = await axios.get('https://icanhazdadjoke.com/', config)
-    return res.data.joke
+    const config = { headers: { Accept: "application/json" } };
+    const res = await axios.get("https://icanhazdadjoke.com/", config);
+    return res.data.joke;
   } catch (e) {
-    return "NO JOKES AVAILABLE! SORRY :("
+    return "NO JOKES AVAILABLE! SORRY :(";
   }
-}
+};
 
-button.addEventListener('click', addNewJoke)
-
- 
+button.addEventListener("click", addNewJoke);

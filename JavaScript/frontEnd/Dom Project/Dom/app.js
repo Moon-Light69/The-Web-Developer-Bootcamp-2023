@@ -17,6 +17,8 @@
 // // }
 // ////================================================//
 // //// document
+// ////document.querySelector
+// ////document.querySelectorAll
 // //// console.dir(document)
 // //// const banner = document.getElementById("banner")
 // //// getAttribute = after const = for seeing elements
@@ -25,7 +27,7 @@
 // //// window.getComputedStyle()
 // //// .style.fontSize
 // ////.parentElement
-// ////.children[1] 
+// ////.children[1]
 // ////.nextElementSibling
 // ////.nextSibling
 // ////.createElement
@@ -38,9 +40,9 @@
 // ////.remove
 // ////.removeChilde
 // // addEventListener('', function() {
-    
+
 // // })
-// ////================================================// 
+// ////================================================//
 // // const allLinks = document.querySelectorAll('a');
 
 // // for (let links of allLinks) {
@@ -67,7 +69,7 @@
 // // }
 
 // // first you must make a const for useing this
-// // window.getComputedStyle() 
+// // window.getComputedStyle()
 
 // // const H2 = document.querySelector('h2')
 // // H2.classList.add('purple')
@@ -80,9 +82,6 @@
 // newImg.src = 'https://img.freepik.com/free-photo/grayscale-selective-focus-hot-sad-dog-looking-out-window_181624-17664.jpg'
 // document.body.appendChild(newImg)
 // newImg.classList.add('square')
-
-
-
 
 // // const newH1 = document.querySelector('h1')
 // // const newH5 = document.createElement('h5')
