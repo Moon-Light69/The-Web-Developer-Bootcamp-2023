@@ -698,7 +698,7 @@
 // function rollDie(numSide) {
 //   if (numSide === undefined || NaN) {
 //     numSide = 6;
-//   } 
+//   }
 //   return Math.floor(Math.random() * numSide) + 1;
 // }
 
@@ -758,7 +758,6 @@
 // }
 
 // raceResults('Daniel', 'Ehsan', 'Jack', 'Tim', 'Alex')
-
 
 // const scores = [929321, 899341, 888336, 772739, 543671, 243567, 111934]
 

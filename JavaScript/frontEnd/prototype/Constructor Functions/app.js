@@ -271,7 +271,8 @@ class school {
     this.fa = family;
   }
   who() {
-    console.log(`Hi my name is: ${this.nam} and my family:${this.fa}`);
+    const { nam } = this;
+    console.log(`Hi my name is: ${nam} and my family:${this.fa}`);
   }
 }
 
