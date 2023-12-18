@@ -10,6 +10,8 @@ app.get("/", (req, res) => {
   res.render("home.ejs");
 });
 
+app.use(express.static(path.join(__dirname, "public")));
+
 app.get("/cats", (req, res) => {
   const cats = [
     "Whiskers",
@@ -26,7 +28,7 @@ app.get("/cats", (req, res) => {
   res.render("cats.ejs", { cats: cats });
 });
 
-app.get("/rand", (req, res) => {
+app.use("/rand", (req, res) => {
   const num = Math.floor(Math.random() * 10) + 10;
   console.log(num);
   res.render("random.ejs", { num: num });

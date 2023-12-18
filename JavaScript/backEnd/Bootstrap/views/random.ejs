@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/head'); %>
+  </head>
+  <body>
+    <%- include('partials/navbar'); %>
+    <h1>Here is your number:<%= num %></h1>
+    <% if (num % 2 === 0) {%>
+    <h2>this is an even number</h2>
+    <% } else { %>
+    <h2>this is an odd number</h2>
+    <%} %>
+    <h2>This is: <%= num % 2 === 0 ? "even" : "ODD"%></h2>
+  </body>
+</html>

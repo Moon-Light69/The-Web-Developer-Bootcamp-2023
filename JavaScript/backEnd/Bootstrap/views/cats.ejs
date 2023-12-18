@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/head'); %>
+  </head>
+  <body>
+    <%- include('partials/navbar'); %>
+    <h1>This is our cats name:</h1>
+
+    <ul>
+      <% for(let allcat of cats) {%>
+      <li><%= allcat %></li>
+      <% } %>
+    </ul>
+  </body>
+</html>
